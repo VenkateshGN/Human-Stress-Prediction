@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Graphs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .plot {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+
+        .plot img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .plot h2 {
+            margin: 0;
+            padding: 10px;
+            background: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio Analysis Graphs</h1>
+    <div class="grid-container">
+        <div class="plot">
+            <h2>Raw Wave</h2>
+            <img src="/plot/raw_wave" alt="Raw Wave">
+        </div>
+        <div class="plot">
+            <h2>Amplitude Spectrum</h2>
+            <img src="/plot/amplitude_spectrum" alt="Amplitude Spectrum">
+        </div>
+        <div class="plot">
+            <h2>Spectrogram</h2>
+            <img src="/plot/spectrogram" alt="Spectrogram">
+        </div>
+        <div class="plot">
+            <h2>Chromagram</h2>
+            <img src="/plot/chromagram" alt="Chromagram">
+        </div>
+    </div>
+</body>
+</html>
